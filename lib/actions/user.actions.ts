@@ -10,11 +10,20 @@ export const signIn = async (userData: signInProps) => {
     const { email, password } = userData;
 
     const { account } = await createAdminClient();
-    const response = await account.createEmailPasswordSession(email, password);
 
-    return parseStringify(response);
+    const session = await account.createEmailPasswordSession(email, password);
+
+    cookies().set("appwrite-session", session.secret, {
+      path: "/",
+      httpOnly: true,
+      sameSite: "strict",
+      secure: true,
+    });
+
+    return parseStringify(session);
   } catch (err) {
     console.log("Error", err);
+    return null;
   }
 };
 
@@ -42,6 +51,7 @@ export const signUp = async (userData: SignUpParams) => {
     return parseStringify(newUserAccount);
   } catch (err) {
     console.log("Error", err);
+    return null;
   }
 };
 
@@ -54,6 +64,7 @@ export async function getLoggedInUser() {
     return parseStringify(user);
   } catch (err) {
     console.log("Error", err);
+    return null;
   }
 }
 
@@ -66,5 +77,6 @@ export const logout = async () => {
     await account.deleteSession("current");
   } catch (err) {
     console.log("Error", err);
+    return null;
   }
 };
