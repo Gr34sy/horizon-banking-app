@@ -35,6 +35,9 @@ importers:
       clsx:
         specifier: ^2.1.1
         version: 2.1.1
+      dwolla-v2:
+        specifier: ^3.4.0
+        version: 3.4.0(encoding@0.1.13)
       lucide-react:
         specifier: ^0.447.0
         version: 0.447.0(react@18.3.1)
@@ -1802,6 +1805,9 @@ packages:
     resolution: {integrity: sha512-ZmdL2rui+eB2YwhsWzjInR8LldtZHGDoQ1ugH85ppHKwpUHL7j7rN0Ti9NCnGiQbhaZ11FpR+7ao1dNsmduNUg==}
     engines: {node: '>=12'}
 
+  dwolla-v2@3.4.0:
+    resolution: {integrity: sha512-22MDc63zxSnIWFhYdcZ3DjXrvICCCaa9BsKtDKYskLlViw3RoDkIh1xt6gf58j4YAFZV6htk6GbwT+JSVegbxA==}
+
   eastasianwidth@0.2.0:
     resolution: {integrity: sha512-I88TYZWc9XiYHRQ4/3c5rjjfgkjhLyW2luGIheGERbNQ6OY7yTybanSpDXZa8y7VUP9YmDcYa+eyq4ca7iLqWA==}
 
@@ -2102,6 +2108,9 @@ packages:
   form-data@4.0.1:
     resolution: {integrity: sha512-tzN8e4TX8+kkxGPK8D5u0FNmjPUjw3lwC9lSLxxoB/+GtsJG91CO8bSWy73APlgAZzZbXEYZJuxjkHH2w+Ezhw==}
     engines: {node: '>= 6'}
+
+  form-urlencoded@4.5.1:
+    resolution: {integrity: sha512-Rkd/RdMaprsMJEGzEbxolwacp78WupH7u369KEyIY3pEZ1fhL6HtyQ1FX+4HSfA1VVhET18UwCUcr5DVaDIaqg==}
 
   fragment-cache@0.2.1:
     resolution: {integrity: sha512-GMBAbW9antB8iZRHLoGw0b3HANt57diZYFO/HL1JGIC1MjKrdmhxvrJbupnVvpys0zsz7yBApXdQyfepKly2kA==}
@@ -2702,6 +2711,9 @@ packages:
 
   lodash.merge@4.6.2:
     resolution: {integrity: sha512-0KpjqXRVvrYyCsX1swR/XTK0va6VQkQM6MNo7PqW77ByjAhoARA8EfrP1N4+KlKj8YS0ZUCtRT/YUuhyYDujIQ==}
+
+  lodash.snakecase@4.1.1:
+    resolution: {integrity: sha512-QZ1d4xoBHYUeuouhEq3lk3Uq7ldgyFXGBhg04+oRLnIz8o9T65Eh+8YdroUwn846zchkA9yDsDl5CVVaV2nqYw==}
 
   lodash@4.17.21:
     resolution: {integrity: sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg==}
@@ -6312,6 +6324,17 @@ snapshots:
 
   dotenv@16.4.5: {}
 
+  dwolla-v2@3.4.0(encoding@0.1.13):
+    dependencies:
+      bluebird: 3.7.2
+      form-urlencoded: 4.5.1
+      invariant: 2.2.4
+      is-stream: 1.1.0
+      lodash.snakecase: 4.1.1
+      node-fetch: 2.7.0(encoding@0.1.13)
+    transitivePeerDependencies:
+      - encoding
+
   eastasianwidth@0.2.0: {}
 
   electron-to-chromium@1.5.41: {}
@@ -6808,6 +6831,8 @@ snapshots:
       asynckit: 0.4.0
       combined-stream: 1.0.8
       mime-types: 2.1.35
+
+  form-urlencoded@4.5.1: {}
 
   fragment-cache@0.2.1:
     dependencies:
@@ -7426,6 +7451,8 @@ snapshots:
       p-locate: 5.0.0
 
   lodash.merge@4.6.2: {}
+
+  lodash.snakecase@4.1.1: {}
 
   lodash@4.17.21: {}
 
