@@ -2,7 +2,7 @@
 
 import { Button } from "./ui/button";
 import { useEffect, useState, useCallback } from "react";
-import { useRouter } from "next/router";
+import { useRouter } from "next/navigation";
 import {
   PlaidLinkOnSuccess,
   PlaidLinkOptions,
