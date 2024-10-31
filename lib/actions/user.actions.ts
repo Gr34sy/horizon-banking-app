@@ -1,5 +1,5 @@
 "use server";
-import { ID } from "node-appwrite";
+import { ID, Query } from "node-appwrite";
 import { createSessionClient } from "./appwrite";
 import { createAdminClient } from "./appwrite";
 import { cookies } from "next/headers";
@@ -22,12 +22,25 @@ const {
   APPWRITE_BANK_COLLECTION_ID: BANK_COLLECTION_ID,
 } = process.env;
 
-export const signIn = async (userData: signInProps) => {
+export const getUserInfo = async ({ userId }: getUserInfoProps) => {
   try {
-    const { email, password } = userData;
+    const { database } = await createAdminClient();
 
+    const user = await database.listDocuments(
+      DATABASE_ID!,
+      USER_COLLECTION_ID!,
+      [Query.equal("userId", [userId])]
+    );
+
+    return parseStringify(user.documents[0]);
+  } catch (error) {
+    console.log(error);
+  }
+};
+
+export const signIn = async ({ email, password }: signInProps) => {
+  try {
     const { account } = await createAdminClient();
-
     const session = await account.createEmailPasswordSession(email, password);
 
     cookies().set("appwrite-session", session.secret, {
@@ -37,10 +50,11 @@ export const signIn = async (userData: signInProps) => {
       secure: true,
     });
 
-    return parseStringify(session);
-  } catch (err) {
-    console.log("Error", err);
-    return null;
+    const user = await getUserInfo({ userId: session.userId });
+
+    return parseStringify(user);
+  } catch (error) {
+    console.error("Error", error);
   }
 };
 
@@ -100,8 +114,9 @@ export const signUp = async ({ password, ...userData }: SignUpParams) => {
 export async function getLoggedInUser() {
   try {
     const { account } = await createSessionClient();
+    const result = await account.get();
 
-    const user = await account.get();
+    const user = await getUserInfo({ userId: result.$id });
 
     return parseStringify(user);
   } catch (err) {
@@ -132,7 +147,7 @@ export const createLinkToken = async (user: User) => {
       client_name: `${user.firstName} ${user.lastName}`,
       products: ["auth"] as Products[],
       language: "en",
-      country_codes: ["PL"] as CountryCode[],
+      country_codes: ["US"] as CountryCode[],
     };
 
     const response = await plaidClient.linkTokenCreate(tokenParams);
