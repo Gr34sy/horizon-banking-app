@@ -1,11 +1,12 @@
-"use client";
+'use client';
 
-import Link from "next/link";
-import Image from "next/image";
-import { sidebarLinks } from "@/constants";
-import { cn } from "@/lib/utils";
-import { usePathname } from "next/navigation";
-import Footer from "./Footer";
+import Link from 'next/link';
+import Image from 'next/image';
+import { sidebarLinks } from '@/constants';
+import { cn } from '@/lib/utils';
+import { usePathname } from 'next/navigation';
+import Footer from './Footer';
+import PlaidLink from './PlaidLink';
 
 const Sidebar = ({ user }: SidebarProps) => {
   const pathname = usePathname();
@@ -31,24 +32,25 @@ const Sidebar = ({ user }: SidebarProps) => {
             <Link
               href={item.route}
               key={item.label}
-              className={cn("sidebar-link", { "bg-bank-gradient": isActive })}
+              className={cn('sidebar-link', { 'bg-bank-gradient': isActive })}
             >
               <div className="relative size-6">
                 <Image
                   src={item.imgURL}
                   alt={item.label}
                   fill
-                  className={cn({ "brightness-[3] invert-0": isActive })}
+                  className={cn({ 'brightness-[3] invert-0': isActive })}
                 />
               </div>
 
-              <p className={cn("sidebar-label", { "!text-white": isActive })}>
+              <p className={cn('sidebar-label', { '!text-white': isActive })}>
                 {item.label}
               </p>
             </Link>
           );
         })}
-        USER
+        
+        <PlaidLink user={user}/>
       </nav>
 
       <Footer user={user} />
