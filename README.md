@@ -1,7 +1,6 @@
-![image](https://github.com/user-attachments/assets/a9b2f7e2-7645-49b1-943c-45e66b0dd8b3)# Memory Game created with ReactJS
-## The app allows to play memory game for up to four players.
+# The app allows to play memory game for up to four players.
 
-#### Technologies used in the app:
+## <a name="tech-stack">Technologies used in the app:</a>
 - <img align="left" alt="Tailwind" width="50px" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" style="padding-right:10px;" /> TailwindCSS 
 - <img align="left" alt="React" width="50px" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" style="padding-right:10px;" /> React 
 - <img align="left" alt="Next.js" width="50px" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg" style="padding-right:10px;" /> Next 
