@@ -2,9 +2,9 @@
 
 ## Technologies used in the app:
 
-<div align="left" style="display:flex;align-items: center; gap:10px;padding-right:20px;"> 
-  <img align="left" alt="Tailwind" width="50px" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" /><p>TailwindCSS</p> 
-</div>
+
+  <img align="left" alt="Tailwind" width="50px" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" /><p align="left" style="padding-right:10px;">TailwindCSS</p> 
+  <img align="left" alt="Tailwind" width="50px" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" /><p align="left" style="padding-right:10px;">TailwindCSS</p>   <img align="left" alt="Tailwind" width="50px" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" /><p align="left" style="padding-right:10px;">TailwindCSS</p>   <img align="left" alt="Tailwind" width="50px" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" /><p align="left" style="padding-right:10px;">TailwindCSS</p> 
 
 <div align="left" style="display:flex;align-items: center; gap:10px;padding-right:20px;"> 
   <img align="left" alt="React" width="50px" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg"/><p>React</p>
