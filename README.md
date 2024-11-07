@@ -1,6 +1,7 @@
 # The app allows to play memory game for up to four players.
 
 ## Technologies used in the app:
+
 <div align="left" style="display:flex;align-items: center; gap:10px;padding-right:20px;"> 
   <img align="left" alt="Tailwind" width="50px" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" /><p>TailwindCSS</p> 
 </div>
