@@ -4,7 +4,22 @@
 
 
 <span align="left" style="padding-right:10px;"> 
-<img alt="Tailwind" width="40px" height="40px" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" />
+  <img alt="Tailwind" width="40px" height="40px" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" />
+  <p align="left">TailwindCSS</p>
+</span>
+
+<span align="left" style="padding-right:10px;"> 
+  <img alt="Tailwind" width="40px" height="40px" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" />
+  <p align="left">TailwindCSS</p>
+</span>
+
+<span align="left" style="padding-right:10px;"> 
+  <img alt="Tailwind" width="40px" height="40px" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" />
+  <p align="left">TailwindCSS</p>
+</span>
+
+<span align="left" style="padding-right:10px;"> 
+  <img alt="Tailwind" width="40px" height="40px" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" />
   <p align="left">TailwindCSS</p>
 </span>
 
