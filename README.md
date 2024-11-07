@@ -3,9 +3,11 @@
 ## Technologies used in the app:
 
 
-<p align="left" style="padding-right:10px;"> <img alt="Tailwind" width="40px" height="40px" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" />TailwindCSS</p> 
-<p align="left" style="padding-right:10px;"> <img alt="Tailwind" width="40px" height="40px" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" />TailwindCSS</p> 
-<p align="left" style="padding-right:10px;"> <img alt="Tailwind" width="40px" height="40px" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" />TailwindCSS</p> 
+<span align="left" style="padding-right:10px;"> 
+<img alt="Tailwind" width="40px" height="40px" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" />
+  <p align="left">TailwindCSS</p>
+</span>
+
 
 
 
