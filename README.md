@@ -38,7 +38,6 @@ Lastly, the list of bank accounts will be displayed. Check, which of them you wa
 
 👉 **Responsiveness**: Ensures the application adapts seamlessly to various screen sizes and devices, providing a consistent user experience across desktop, tablet, and mobile platforms.
 
-and many more, including code architecture and reusability. 
 
 ## 🤸 Quick Start
 
