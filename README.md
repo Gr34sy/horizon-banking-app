@@ -1,43 +1,25 @@
-# The app allows to play memory game for up to four players.
+## 📋 About the App
+Built with Next.js, Horizon is a simulation of financial SaaS platform that connects to multiple bank accounts, displays transactions in real-time, allows users to transfer money to other platform users, and manages their finances altogether. Since it is running on the Plaid sandbox mode, the app uses only fake data. I have coded it because of willingness to polish my Backend and Next.JS skills. During the development process I have discovered some details about how banking apps work under the hood. The biggest challenge for me was writing the serverside functions which handle the bank connection for users. Mainly because of the quite complex process of obtaining all of the necessary access tokens for both Plaid and Dwolla. 
 
-## Technologies used in the app:
+## ⚙️ Tech Stack
 - TailwindCSS
 - React
 - Next.JS
+- Typescript
 - Appwrite
 - Plaid
 - Dwolla
 
-## 🚨 Tutorial
+## ❔ How to create an account on the app
+Firstly a you will have to sign in or sign up on the site. It is important to provide proper two-letter shorhand of an actual US state, in order to signup successfully.
+After the user account is created, the button with link will show up. After skipping some information, you will be able to choose a bank to link your account. It doesn't matter which will you choose. Then you will have to log in on the fake bank site. In order to do that, use the following credentials: <br/>
+username: user_good <br/>
+password: pass_good ><br/>
+<br/><br/>
+Then just click twice on the big buttons under the form inputs to skip the two mobile verification steps.
+Lastly, the list of bank accounts will be displayed. Check, which of them you want to link and accept all of the terms and conditions. Now you are ready to go and can fully enjoy the app!
 
-This repository contains the code corresponding to an in-depth tutorial available on our YouTube channel, <a href="https://www.youtube.com/@javascriptmastery/videos" target="_blank"><b>JavaScript Mastery</b></a>. 
-
-If you prefer visual learning, this is the perfect resource for you. Follow our tutorial to learn how to build projects like these step-by-step in a beginner-friendly manner!
-
-<a href="https://youtu.be/PuOVqP_cjkE?feature=shared" target="_blank"><img src="https://github.com/sujatagunale/EasyRead/assets/151519281/1736fca5-a031-4854-8c09-bc110e3bc16d" /></a>
-
-## <a name="introduction">🤖 Introduction</a>
-
-Built with Next.js, Horizon is a financial SaaS platform that connects to multiple bank accounts, displays transactions in real-time, allows users to transfer money to other platform users, and manages their finances altogether. 
-
-If you're getting started and need assistance or face any bugs, join our active Discord community with over **34k+** members. It's a place where people help each other out.
-
-<a href="https://discord.com/invite/n6EdbFJ" target="_blank"><img src="https://github.com/sujatagunale/EasyRead/assets/151519281/618f4872-1e10-42da-8213-1d69e486d02e" /></a>
-
-## <a name="tech-stack">⚙️ Tech Stack</a>
-
-- Next.js
-- TypeScript
-- Appwrite
-- Plaid
-- Dwolla
-- React Hook Form
-- Zod
-- TailwindCSS
-- Chart.js
-- ShadCN
-
-## <a name="features">🔋 Features</a>
+## 🔋 Functionalities
 
 👉 **Authentication**: An ultra-secure SSR authentication with proper validations and authorization
 
@@ -57,7 +39,7 @@ If you're getting started and need assistance or face any bugs, join our active 
 
 and many more, including code architecture and reusability. 
 
-## <a name="quick-start">🤸 Quick Start</a>
+## 🤸 Quick Start
 
 Follow these steps to set up the project locally on your machine.
 
@@ -69,22 +51,11 @@ Make sure you have the following installed on your machine:
 - [Node.js](https://nodejs.org/en)
 - [npm](https://www.npmjs.com/) (Node Package Manager)
 
-**Cloning the Repository**
+1.Download the code from repo
 
-```bash
-git clone https://github.com/adrianhajdin/banking.git
-cd banking
-```
+2.Install the project dependencies using npm/pnpm
 
-**Installation**
-
-Install the project dependencies using npm:
-
-```bash
-npm install
-```
-
-**Set Up Environment Variables**
+3.Set Up Environment Variables
 
 Create a new file named `.env` in the root of your project and add the following content:
 
@@ -114,5 +85,4 @@ DWOLLA_SECRET=
 DWOLLA_BASE_URL=https://api-sandbox.dwolla.com
 DWOLLA_ENV=sandbox
 ```
-
-Replace the placeholder values with your account credentials. You can obtain these credentials by signing up on the [Appwrite](https://appwrite.io), [Plaid](https://plaid.com/) and [Dwolla](https://www.dwolla.com/)
+4. Replace the placeholder values with your account credentials. You can obtain these credentials by signing up on the [Appwrite](https://appwrite.io), [Plaid](https://plaid.com/) and [Dwolla](https://www.dwolla.com/)
