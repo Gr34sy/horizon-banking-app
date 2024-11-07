@@ -55,9 +55,7 @@ Make sure you have the following installed on your machine:
 
 2. Install the project dependencies using npm/pnpm
 
-3. Set Up Environment Variables
-
-Create a new file named `.env` in the root of your project and add the following content:
+3. Set Up Environment Variables. Create a new file named `.env` in the root of your project and add the following content:
 
 ```env
 #NEXT
