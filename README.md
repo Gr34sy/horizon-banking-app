@@ -10,7 +10,7 @@ Built with Next.js, Horizon is a simulation of financial SaaS platform that conn
 - Plaid
 - Dwolla
 
-## ❔ How to create an account on the app
+## ❔ How to Create an Account on the App
 Firstly a you will have to sign in or sign up on the site. It is important to provide proper two-letter shorhand of an actual US state, in order to signup successfully.
 After the user account is created, the button with link will show up. After skipping some information, you will be able to choose a bank to link your account. It doesn't matter which will you choose. Then you will have to log in on the fake bank site. In order to do that, use the following credentials: 
 <br/><br/>
