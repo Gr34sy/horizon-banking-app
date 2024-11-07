@@ -3,7 +3,7 @@
 ## Technologies used in the app:
 
 
-###### <img alt="Tailwind" width="40px" height="40px" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" />TailwindCSS
+###### <img alt="Tailwind" width="40px" height="40px" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" /><p vertical-align="center">TailwindCSS</p>
 ###### <img alt="Tailwind" width="40px" height="40px" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" />TailwindCSS
 
 <span align="left" style="padding-right:10px;"> 
