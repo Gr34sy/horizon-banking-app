@@ -3,7 +3,7 @@
 ## Technologies used in the app:
 
 
-<span align="left" style="padding-right:10px;"> 
+<span align="left" style="display: flex; padding-right:10px;"> 
   <img alt="Tailwind" width="40px" height="40px" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" />
   <p align="left">TailwindCSS</p>
 </span>
