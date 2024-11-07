@@ -15,7 +15,7 @@ Firstly a you will have to sign in or sign up on the site. It is important to pr
 After the user account is created, the button with link will show up. After skipping some information, you will be able to choose a bank to link your account. It doesn't matter which will you choose. Then you will have to log in on the fake bank site. In order to do that, use the following credentials: 
 <br/><br/>
 username: user_good <br/>
-password: pass_good <br/>
+password: pass_good 
 <br/><br/>
 Then just click twice on the big buttons under the form inputs to skip the two mobile verification steps.
 Lastly, the list of bank accounts will be displayed. Check, which of them you want to link and accept all of the terms and conditions. Now you are ready to go and can fully enjoy the app!
