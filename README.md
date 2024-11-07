@@ -12,9 +12,10 @@ Built with Next.js, Horizon is a simulation of financial SaaS platform that conn
 
 ## ❔ How to create an account on the app
 Firstly a you will have to sign in or sign up on the site. It is important to provide proper two-letter shorhand of an actual US state, in order to signup successfully.
-After the user account is created, the button with link will show up. After skipping some information, you will be able to choose a bank to link your account. It doesn't matter which will you choose. Then you will have to log in on the fake bank site. In order to do that, use the following credentials: <br/>
+After the user account is created, the button with link will show up. After skipping some information, you will be able to choose a bank to link your account. It doesn't matter which will you choose. Then you will have to log in on the fake bank site. In order to do that, use the following credentials: 
+<br/><br/>
 username: user_good <br/>
-password: pass_good ><br/>
+password: pass_good <br/>
 <br/><br/>
 Then just click twice on the big buttons under the form inputs to skip the two mobile verification steps.
 Lastly, the list of bank accounts will be displayed. Check, which of them you want to link and accept all of the terms and conditions. Now you are ready to go and can fully enjoy the app!
@@ -51,11 +52,11 @@ Make sure you have the following installed on your machine:
 - [Node.js](https://nodejs.org/en)
 - [npm](https://www.npmjs.com/) (Node Package Manager)
 
-1.Download the code from repo
+1. Download the code from repo
 
-2.Install the project dependencies using npm/pnpm
+2. Install the project dependencies using npm/pnpm
 
-3.Set Up Environment Variables
+3. Set Up Environment Variables
 
 Create a new file named `.env` in the root of your project and add the following content:
 
