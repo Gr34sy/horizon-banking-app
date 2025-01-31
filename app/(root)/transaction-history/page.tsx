@@ -6,7 +6,7 @@ import { formatAmount } from '@/lib/utils';
 import TransactionsTable from '@/components/TransactionsTable';
 import { Pagination } from '@/components/Pagination';
 
-const TransactionHitory = async ({
+const TransactionHistory = async ({
   searchParams: { id, page },
 }: SearchParamProps) => {
   const currentPage = Number(page as string) || 1;
@@ -15,7 +15,7 @@ const TransactionHitory = async ({
     userId: loggedIn.$id,
   });
 
-  if (!accounts) return null;
+  if (!accounts) return;
 
   const accountsData = accounts?.data;
   const appwriteItemId = (id as string) || accountsData[0]?.appwriteItemId;
@@ -32,13 +32,12 @@ const TransactionHitory = async ({
     indexOfFirstTransaction,
     indexOfLastTransaction
   );
-
   return (
     <div className="transactions">
       <div className="transactions-header">
         <HeaderBox
           title="Transaction History"
-          subtext="See your bank details and transactions"
+          subtext="See your bank details and transactions."
         />
       </div>
 
@@ -48,8 +47,7 @@ const TransactionHitory = async ({
             <h2 className="text-18 font-bold text-white">
               {account?.data.name}
             </h2>
-            <p className="text-blue-25 text-14">{account?.data.officialName}</p>
-
+            <p className="text-14 text-blue-25">{account?.data.officialName}</p>
             <p className="text-14 font-semibold tracking-[1.1px] text-white">
               ●●●● ●●●● ●●●● {account?.data.mask}
             </p>
@@ -65,10 +63,9 @@ const TransactionHitory = async ({
 
         <section className="flex w-full flex-col gap-6">
           <TransactionsTable transactions={currentTransactions} />
-
           {totalPages > 1 && (
             <div className="my-4 w-full">
-              <Pagination page={currentPage} totalPages={totalPages} />
+              <Pagination totalPages={totalPages} page={currentPage} />
             </div>
           )}
         </section>
@@ -76,5 +73,4 @@ const TransactionHitory = async ({
     </div>
   );
 };
-
-export default TransactionHitory;
+export default TransactionHistory;
